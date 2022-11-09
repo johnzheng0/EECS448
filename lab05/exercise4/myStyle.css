@@ -1,0 +1,19 @@
+body {
+    height: 700px;
+}
+
+#mainText {
+    position:absolute;
+    left: 0;
+    padding: 40px;
+    border: 3px solid black;
+    margin-top: 300px;
+}
+
+.inputFieldColumn {
+    float: left;
+    line-height: 160%;
+    margin-bottom: 600px;
+    margin-left: 10px;
+    display: block;
+}
