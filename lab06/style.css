@@ -1,0 +1,104 @@
+
+
+:root {
+    --mainPanelWidth: 800px;
+    --mainPanelHeight: 200px;
+}
+
+.unselectable {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+html {
+    width: 100%;
+    height:100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+body {
+    background-color: black;
+    background-image: url("assets/background.jpg");
+    background-size: cover;
+
+    background-repeat: no-repeat;
+
+    overflow: hidden;
+}
+
+#mainPanel {
+    
+    display: flex;
+    justify-content: left;
+    align-items: center;
+
+    background-color: rgb(0,0,0,0.6 );
+    backdrop-filter: blur(8px);
+
+    border-radius: 32px;
+    width: 990px;
+
+    color: white;
+    font-family: Arial, sans-serif;
+    font-size: xx-large;
+    
+    animation-iteration-count: 1;
+    animation: animOpening ease 1000ms;
+}
+
+#mainHeading {
+    width: 100%;
+    justify-self: left;
+
+    text-shadow: 8px 8px 10px black;
+}
+
+
+#picture {
+    border-radius: 32px;
+    box-shadow: 10px 10px 10px black;
+    height: 340px;
+
+    margin-left: 40px;
+    margin-right: 20px;
+
+    animation-iteration-count: 1;
+    animation: animOpening ease 1500ms;
+}
+
+.exerciseLink {
+    background-color: rgb(0,0,0,0.8);
+    color: white;
+    border-radius: 32px;
+    box-shadow: 10px 10px 10px black;
+    text-decoration: none;
+    line-height: 60px;
+
+    padding: 5px 30px;
+
+    transition: padding 300ms ease-out, margin 500ms ease-out;
+}
+.exerciseLink:hover {
+    background-color: rgb(64,64,64,0.6);
+    padding-left: 40px;
+    padding-right: 60px;
+    margin-left: 10px;
+}
+
+@keyframes animOpening {
+    from {
+        transform: translateY(40px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+
+
