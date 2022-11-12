@@ -1,3 +1,6 @@
+<!DOCTYPE html>
+<html>
+
 <?php
     //used for the sake of ease
     $size = 100;
@@ -20,3 +23,5 @@
         echo "</tr>";
     }
 ?>
+
+</html>

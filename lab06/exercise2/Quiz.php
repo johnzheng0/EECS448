@@ -1,3 +1,6 @@
+<!DOCTYPE html>
+<html>
+
 <?php  
 $ans1 = $_POST["quizChoice1"]; 
 $ans2 = $_POST["quizChoice2"]; 
@@ -65,3 +68,4 @@ echo "</div><br>";
 echo "</body>";
 
 ?>
+</html>
