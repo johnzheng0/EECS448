@@ -27,15 +27,17 @@
 <body>
     <div id="topbar">
         <div id="topbarMenu">
-            <a id="home" href="..">HOME</a>
+            <a id="home" href="customerFrontend.html">HOME</a>
             <input type="Text" class="textInput" id="search">
-            <a id="btnSearch" href=""><img width="20" src="assets/iconSearch.png"></a>
-            <a id="cart" href=""><img width="20" src="assets/iconCart.png"></a>
+            <a id="btnSearch" href="customerFrontend.html"><img width="20" src="assets/iconSearch.png"></a>
+            <a id="cart" href="customerFrontend.html"><img width="20" src="assets/iconCart.png"></a>
         </div>
         <img id="topbarImage" src="assets/banner.jpg">
     </div>
 
     <div id="formPage">
+        <h1>THANK YOU FOR YOUR PURCHASE</h1>
+
         <div id="loginDetails">
             <?php
                 echo "Username: ", $username, "<br>";
@@ -100,66 +102,9 @@
                     }
                 ?><br><br>
                 <?php echo "$", $total, "<br>"; ?>
-
             </div>
         </div>
-
-
-
-<!--
-            <table cellspacing="0">
-                <tr>
-                    <td></td>
-                    <td>Quantity</td>
-                    <td>Per Item</td>
-                    <td>Sub Total</td>
-                </tr>
-                <tr id="tableItem1">
-                    <td>Item 1</td>
-                    <td><?php echo $quantity1 ?>
-                    <td>$<?php echo $cost1?></td>
-                    <td>$<?php echo $subtotal1 ?></td>
-                </tr>
-                <tr id="tableItem1">
-                    <td>Item 2</td>
-                    <td><?php echo $quantity2 ?>
-                    <td>$<?php echo $cost2?></td>
-                    <td>$<?php echo $subtotal2 ?></td>
-                </tr>
-                <tr id="tableItem1">
-                    <td>Item 3</td>
-                    <td><?php echo $quantity3 ?>
-                    <td>$<?php echo $cost3?></td>
-                    <td>$<?php echo $subtotal3 ?></td>
-                </tr>
-                <tr>
-                    <td>shipping</td>
-                    <td colspan="2">
-                        <?php
-                            switch ($shipping) {
-                                case "Free":
-                                    echo "FREE</td><td>$0.00</td>";
-                                    $total += 0;
-                                    break;
-                                case "Fast":
-                                    echo "FAST</td><td>$5.00</td>";
-                                    $total += 5;
-                                    break;
-                                case "Express":
-                                    echo "EXPRESS</td><td>$50.00</td>";
-                                    $total += 50;
-                                    break;
-                            }
-                        ?>
-                    </td>
-                </tr>
-                <tr>
-                    <td colspan="3" id="totalCost">Total Cost</td>
-                    <td>$<?php echo $total ?></td>
-                </tr>
-            </table>
-        </div><br> 
-    </div> -->
+    </div>
 </body>
 
 

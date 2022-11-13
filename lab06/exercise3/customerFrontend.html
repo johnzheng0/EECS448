@@ -10,10 +10,10 @@
 <body>
     <div id="topbar">
         <div id="topbarMenu">
-            <a id="home" href="..">HOME</a>
+            <a id="home" href="customerFrontend.html">HOME</a>
             <input type="Text" class="textInput" id="search">
-            <a id="btnSearch" href=""><img width="20" src="assets/iconSearch.png"></a>
-            <a id="cart" href=""><img width="20" src="assets/iconCart.png"></a>
+            <a id="btnSearch" href="customerFrontend.html"><img width="20" src="assets/iconSearch.png"></a>
+            <a id="cart" href="customerFrontend.html"><img width="20" src="assets/iconCart.png"></a>
         </div>
         <img id="topbarImage" src="assets/banner.jpg">
     </div>
@@ -26,7 +26,7 @@
                 <img class="shopItemImage" width="200" height="200" src="assets/brick.jpg"><br>
                 <label class="shopItemName">Best Brick<br>$1999.99</label><br>
                 <div>
-                    <button type="button" class="btnShopItem" onClick="test('inputQuantity1')">Buy</button>
+                    <button type="button" class="btnShopItem" onClick="buy('inputQuantity1')">Buy</button>
                     <input type="number" id="inputQuantity1" name="inputQuantity1" class="shopItemQuantity" value="0" autocomplete="false"><br>
                 </div>
             </div>
@@ -34,7 +34,7 @@
                 <img class="shopItemImage" width="200" height="200" src="assets/brick.jpg"><br>
                 <label class="shopItemName">Mediocre Brick<br>$17.99</label><br>
                 <div>
-                    <button type="button" class="btnShopItem" onClick="test('inputQuantity2')">Buy</button>
+                    <button type="button" class="btnShopItem" onClick="buy('inputQuantity2')">Buy</button>
                     <input type="number" id="inputQuantity2" name="inputQuantity2" class="shopItemQuantity" value="0" autocomplete="false"><br>
                 </div>
             </div>
@@ -42,7 +42,7 @@
                 <img class="shopItemImage" width="200" height="200" src="assets/brick.jpg"><br>
                 <label class="shopItemName">Shameful Brick<br>$0.99</label><br>
                 <div>
-                    <button type="button" class="btnShopItem" onClick="test('inputQuantity3')">Buy</button>
+                    <button type="button" class="btnShopItem" onClick="buy('inputQuantity3')">Buy</button>
                     <input type="number" id="inputQuantity3" name="inputQuantity3" class="shopItemQuantity" value="0" autocomplete="false"><br>
                 </div>
             </div>
@@ -56,9 +56,9 @@
 
         <h1>SHIPPING OPTIONS</h1>
         <div id="fieldShipping">
-            <label class="radioLabel"><div class="radioCustom"><input type="radio" name="inputShipping" value="Free" class="fieldShipping" autocomplete="false" checked="true"><div class="radioCustomCheck"></div></div>FREE (7 days)</label><br>
-            <label class="radioLabel"><div class="radioCustom"><input type="radio" name="inputShipping" value="Fast" class="fieldShipping" autocomplete="false"><div class="radioCustomCheck"></div></div>FAST (3 days)</label><br>
-            <label class="radioLabel"><div class="radioCustom"><input type="radio" name="inputShipping" value="Express" class="fieldShipping" autocomplete="false"><div class="radioCustomCheck"></div></div>EXPRESS (overnight)</label><br>
+            <label class="radioLabel"><div class="radioCustom"><input type="radio" name="inputShipping" value="Free" class="radioShipping" autocomplete="false"><div class="radioCustomCheck"></div></div>$0 FREE (7 days)</label><br>
+            <label class="radioLabel"><div class="radioCustom"><input type="radio" name="inputShipping" value="Fast" class="radioShipping" autocomplete="false"><div class="radioCustomCheck"></div></div>$5 FAST (3 days)</label><br>
+            <label class="radioLabel"><div class="radioCustom"><input type="radio" name="inputShipping" value="Express" class="radioShipping" autocomplete="false"><div class="radioCustomCheck"></div></div>$50 EXPRESS (overnight)</label><br>
         </div><br>
         
 

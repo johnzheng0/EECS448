@@ -32,27 +32,28 @@ button:active {
     text-align: left;
 }
 .radioCustom {
-    transform: translateY(-2px);
-    margin-right: 1rem;
+    transform: translateY(-3px);
+    margin-right: 0.5rem;
     width: 20px;
     height: 20px;
     border: 2px solid black;
-    border-radius: 50%;
+    border-radius: 40%;
     display: flex;
     justify-content: center;
     align-items: center;
+    box-shadow: 0px 3px 2px gray;
 }
 .radioCustom .radioCustomCheck {
     width: calc(100% - 8px);
     height: calc(100% - 8px);
     background-color: black;
-    border-radius: 50%;
+    border-radius: 40%;
     display: none;
 }
-.fieldShipping:checked + .radioCustomCheck {
+.radioShipping:checked + .radioCustomCheck {
     display: inline-block;
 }
-.fieldShipping {
+.radioShipping {
     display: none;
 }
 
@@ -148,9 +149,6 @@ button:active {
 .shopItemQuantity {
     width: 40%;
 }
-.shopItemImage {
-    border: 0px solid black;
-}
 .btnShopItem {
     width: 20%;
 }
@@ -173,6 +171,7 @@ button:active {
 
 #loginDetails {
     margin: 0px auto;
+    margin-bottom: 20px;
 }
 
 
@@ -192,6 +191,10 @@ button:active {
 }
 .receiptQuantities {
     text-align: center;
+}
+.receiptTotals {
+    text-align: right;
+    margin-left: 60px;
 }
 
 table {
